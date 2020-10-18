@@ -38,7 +38,7 @@ ul {
 /*<-----HEADER------->*/
 .header {
   display: flex;
-  align-items: center;
+  justify-content: space-between;
   border-bottom: 1px solid #ececec;
   height: 80px;
   padding-top: 0px;
@@ -56,13 +56,9 @@ ul {
 .navigation-list-item:not(:last-child) {
   margin-right: 50px;
 }
-.menu-link:not(:last-child) {
-  margin-right: 50px;
-}
 .header .header-tel {
   display: flex;
   flex-direction: row;
-  padding-left: 305px;
 }
 
 .add-1 {
@@ -117,6 +113,7 @@ ul {
 .header-tel-link:hover,
 .header-tel-link:focus {
   color: #2196f3;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .navigation-list,
 .header-tel-link {
@@ -404,6 +401,7 @@ ul {
 }
 .social-list-link:hover {
   background-color: #2196f3;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-list-link:hover .social-list-svg {
   fill: #ffffff;
@@ -476,6 +474,7 @@ ul {
 }
 .images-client:hover {
   border: 1px solid #2196f3;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .images-client:hover .client-svg-1 {
   fill: #2196f3;
@@ -606,6 +605,7 @@ ul {
   background: #2196f3;
   border: #2196f3;
   fill: 1px solid #2196f3;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*<!--END---PORTFOLIO----HERO-->*/
@@ -771,7 +771,7 @@ ul {
   display: block;
   position: relative;
   padding: 32px 32px;
-  text-decoration: none;
+  text-decoration-color: rgb(255, 255, 255);
 }
 
 .menu-link::after {
@@ -795,4 +795,16 @@ ul {
 }
 .menu-link:hover {
   color: #2196f3;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration-color: #2196f3;
+}
+.menu-link-1 {
+  color: #212121;
+  display: block;
+  position: relative;
+  padding: 32px 32px;
+  text-decoration-color: rgb(255, 255, 255);
+}
+.menu-link-1:hover {
+  text-decoration-color: #2196f3;
 }
